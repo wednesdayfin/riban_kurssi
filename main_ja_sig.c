@@ -6,14 +6,14 @@
 #include <sys/wait.h>
 #include <stdlib.h>
 
-static void sig_usr(int signo){
+/*static void sig_usr(int signo){
   if(signo == SIGINT){
   char buf[] = "SIGINT signal caught!!\n";
   int wr = strlen(buf);
   write(STDOUT_FILENO, buf, wr);
 }
   return;
-}
+}*/
 
 int main(void)
 {
