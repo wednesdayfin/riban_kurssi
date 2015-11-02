@@ -3,106 +3,132 @@ char merkki = luetaan_filusta;
 switch(merkki) {
 
    case 'A':
+   case 'a':
       //signaloi morse .-
       break; /* optional */
 	
    case 'B':
+   case 'b':
       //signaloi morse
       break; /* optional */
 
    case 'C':
+   case 'c':
       //signaloi morse .-
       break; /* optional */
 	
    case 'D':
+   case 'd':
       //signaloi morse
       break; /* optional */
       
    case 'E':
+   case 'e':
       //signaloi morse .-
       break; /* optional */
 	
    case 'F':
+   case 'f':
       //signaloi morse
       break; /* optional */
       
    case 'G':
+   case 'g':
       //signaloi morse .-
       break; /* optional */
 	
    case 'H':
+   case 'h':
       //signaloi morse
       break; /* optional */
       
    case 'I':
+   case 'i':
       //signaloi morse .-
       break; /* optional */
 	
    case 'J':
+   case 'j':
       //signaloi morse
       break; /* optional */
       
    case 'K':
+   case 'k':
       //signaloi morse .-
       break; /* optional */
 	
    case 'L':
+   case 'l':
       //signaloi morse
       break; /* optional */
       
    case 'M':
+   case 'm':
       //signaloi morse .-
       break; /* optional */
 	
    case 'N':
+   case 'n':
       //signaloi morse
       break; /* optional */
       
    case 'O':
+   case 'o':
       //signaloi morse .-
       break; /* optional */
 	
    case 'P':
+   case 'p':
       //signaloi morse
       break; /* optional */
       
    case 'Q':
+   case 'q':
       //signaloi morse .-
       break; /* optional */
 	
    case 'R':
+   case 'r':
       //signaloi morse
       break; /* optional */
       
    case 'S':
+   case 's':
       //signaloi morse .-
       break; /* optional */
 	
    case 'T':
+   case 't':
       //signaloi morse
       break; /* optional */
       
    case 'U':
+   case 'u':
       //signaloi morse .-
       break; /* optional */
 	
    case 'V':
+   case 'v':
       //signaloi morse
       break; /* optional */
       
    case 'W':
+   case 'v':
       //signaloi morse .-
       break; /* optional */
 	
    case 'X':
+   case 'x':
       //signaloi morse
       break; /* optional */
       
    case 'Y':
+   case 'y':
       //signaloi morse .-
       break; /* optional */
 	
    case 'Z':
+   case 'z':
       //signaloi morse
       break; /* optional */
       
