@@ -53,14 +53,14 @@ int main(void)
         if(loli == 0) // loliprosessi
         {
             //taalta signaalit pedolle
-            var_lcl++;
-            var_glb++;
-            printf("\n Child Process :: var_lcl = [%d], var_glb[%d]\n", var_lcl, var_glb);
+            FILE* filu1;
+            filu1 = fopen(luku, "r");
         }
         else // pedoprosessi
         {
             //taalla jotain
-            continue;
+            FILE* filu2;
+            filu2 = fopen(kirj, "w")
         }
     }
     else // fork failed
