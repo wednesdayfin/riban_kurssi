@@ -17,6 +17,7 @@ static void sig_usr(int signo){
 
 int main(void)
 {
+    //signalointi
     /*
     pid_t pid, ppid;
     ppid = getpid();
@@ -34,7 +35,7 @@ int main(void)
     }
     */
     
-    //taulu tahan
+    //dekoodaustaulu tahan
     
     //bufferi tahan?
     
@@ -45,21 +46,21 @@ int main(void)
     pid_t childPID;
     int var_lcl = 0;
 
-    childPID = fork();
+    loli = fork();
 
-    if(childPID >= 0) // fork was successful
+    if(loli >= 0) // onnistui
     {
-        if(childPID == 0) // child process
+        if(loli == 0) // loliprosessi
         {
+            //taalta signaalit pedolle
             var_lcl++;
             var_glb++;
             printf("\n Child Process :: var_lcl = [%d], var_glb[%d]\n", var_lcl, var_glb);
         }
-        else //Parent process
+        else // pedoprosessi
         {
-            var_lcl = 10;
-            var_glb = 20;
-            printf("\n Parent process :: var_lcl = [%d], var_glb[%d]\n", var_lcl, var_glb);
+            //taalla jotain
+            continue;
         }
     }
     else // fork failed
