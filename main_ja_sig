@@ -1,8 +1,11 @@
-#include<stdio.h>
-#include<signal.h>
-#include<unistd.h>
-#include<stdlib.h>
-#include<errno.h>
+#include <signal.h>
+#include <unistd.h>
+#include <sys/types.h>
+#include <errno.h>
+#include <stdio.h>
+#include <sys/wait.h>
+#include <stdlib.h>
+
 static void sig_usr(int signo){
   if(signo == SIGINT){
   char buf[] = "SIGINT signal caught!!\n";
@@ -14,6 +17,7 @@ static void sig_usr(int signo){
 
 int main(void)
 {
+    /*
     pid_t pid, ppid;
     ppid = getpid();
     struct sigaction sig;
@@ -28,4 +32,42 @@ int main(void)
     { //Child    
         kill(ppid, SIGINT);
     }
+    */
+    
+    //taulu tahan
+    
+    //bufferi tahan?
+    
+    //forkkaus
+    
+    int var_glb; /* A global variable*/
+    
+    pid_t childPID;
+    int var_lcl = 0;
+
+    childPID = fork();
+
+    if(childPID >= 0) // fork was successful
+    {
+        if(childPID == 0) // child process
+        {
+            var_lcl++;
+            var_glb++;
+            printf("\n Child Process :: var_lcl = [%d], var_glb[%d]\n", var_lcl, var_glb);
+        }
+        else //Parent process
+        {
+            var_lcl = 10;
+            var_glb = 20;
+            printf("\n Parent process :: var_lcl = [%d], var_glb[%d]\n", var_lcl, var_glb);
+        }
+    }
+    else // fork failed
+    {
+        printf("\n Fork failed, quitting!!!!!!\n");
+        return 1;
+    }
+
+    return 0;
+    
 }
