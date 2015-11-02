@@ -9,8 +9,128 @@ switch(merkki) {
    case 'B':
       //signaloi morse
       break; /* optional */
-  
-   /* you can have any number of case statements */
+
+   case 'A':
+      //signaloi morse .-
+      break; /* optional */
+	
+   case 'B':
+      //signaloi morse
+      break; /* optional */
+      
+   case 'A':
+      //signaloi morse .-
+      break; /* optional */
+	
+   case 'B':
+      //signaloi morse
+      break; /* optional */
+      
+   case 'A':
+      //signaloi morse .-
+      break; /* optional */
+	
+   case 'B':
+      //signaloi morse
+      break; /* optional */
+      
+   case 'A':
+      //signaloi morse .-
+      break; /* optional */
+	
+   case 'B':
+      //signaloi morse
+      break; /* optional */
+      
+   case 'A':
+      //signaloi morse .-
+      break; /* optional */
+	
+   case 'B':
+      //signaloi morse
+      break; /* optional */
+      
+   case 'A':
+      //signaloi morse .-
+      break; /* optional */
+	
+   case 'B':
+      //signaloi morse
+      break; /* optional */
+      
+   case 'A':
+      //signaloi morse .-
+      break; /* optional */
+	
+   case 'B':
+      //signaloi morse
+      break; /* optional */
+      
+   case 'A':
+      //signaloi morse .-
+      break; /* optional */
+	
+   case 'B':
+      //signaloi morse
+      break; /* optional */
+      
+   case 'A':
+      //signaloi morse .-
+      break; /* optional */
+	
+   case 'B':
+      //signaloi morse
+      break; /* optional */
+      
+   case 'A':
+      //signaloi morse .-
+      break; /* optional */
+	
+   case 'B':
+      //signaloi morse
+      break; /* optional */
+      
+   case 'A':
+      //signaloi morse .-
+      break; /* optional */
+	
+   case 'B':
+      //signaloi morse
+      break; /* optional */
+      
+   case 'A':
+      //signaloi morse .-
+      break; /* optional */
+	
+   case 'B':
+      //signaloi morse
+      break; /* optional */
+      
+   case 'A':
+      //signaloi morse .-
+      break; /* optional */
+	
+   case 'B':
+      //signaloi morse
+      break; /* optional */
+      
+   case 'A':
+      //signaloi morse .-
+      break; /* optional */
+	
+   case 'B':
+      //signaloi morse
+      break; /* optional */
+      
+   case 'A':
+      //signaloi morse .-
+      break; /* optional */
+	
+   case 'B':
+      //signaloi morse
+      break; /* optional */
+      
+   
    default: /* Optional */
     printf("Mita vittua Hessu?\n");
 }
