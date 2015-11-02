@@ -15,25 +15,26 @@
   return;
 }*/
 
-int main(int argc, char*argv[])
+int main(int argc, char* argv[])
 {
     //signalointi
-    /*
-    pid_t pid, ppid;
-    ppid = getpid();
-    struct sigaction sig;
-    sigemptyset(&sig.sa_mask);
-    sig.sa_flags = 0;
-    sig.sa_handler = sig_usr;
-    if(sigaction(SIGINT,&sig,NULL) == 0)
-                printf("Signal processed OKay ");
-    sleep(10);
-    printf("%d ", ppid);
-    if((pid = fork()) == 0)
-    { //Child    
-        kill(ppid, SIGINT);
+    void sig_handler(int signo) {
+        if (signo == SIGUSR1) {
+          //lyhyt
+        }
+        else if (signo == SIGUSR2) {
+          //pitka
+        }
+        else if (signo == SIGUSR3) {
+          //vali
+        }
+        else if (signo == SIGUSR4) {
+          //rivinvaihto
+        }
+        else {
+          //joku muu
+        }
     }
-    */
     
     //dekoodaustaulu tahan
     
