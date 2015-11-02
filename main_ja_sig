@@ -1,0 +1,31 @@
+#include<stdio.h>
+#include<signal.h>
+#include<unistd.h>
+#include<stdlib.h>
+#include<errno.h>
+static void signaali(int signo){
+  if(signo == SIGINT){
+  char buf[] = "SIGINT signal caught!!\n";
+  int wr = strlen(buf);
+  write(STDOUT_FILENO, buf, wr);
+}
+  return;
+}
+
+int main(void)
+{
+    pid_t pid, ppid;
+    ppid = getpid();
+    struct sigaction sig;
+    sigemptyset(&sig.sa_mask);
+    sig.sa_flags = 0;
+    sig.sa_handler = sig_usr;
+    if(sigaction(SIGINT,&sig,NULL) == 0)
+                printf("Signal processed OKay ");
+    sleep(10);
+    printf("%d ", ppid);
+    if((pid = fork()) == 0)
+    { //Child    
+        kill(ppid, SIGINT);
+    }
+}
