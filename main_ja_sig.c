@@ -252,9 +252,9 @@ int main(int argc, char* argv[])
             fclose(filu2);
         }
     }
-    else // fork failed
+    else // vituks meni
     {
-        printf("\n Fork failed, quitting!!!!!!\n");
+        printf("\nHaistappa vidu\n");
         return 1;
     }
 
