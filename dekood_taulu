@@ -1,0 +1,16 @@
+char merkki = luetaan_filusta;
+
+switch(merkki) {
+
+   case 'A':
+      //signaloi morse .-
+      break; /* optional */
+	
+   case 'B':
+      //signaloi morse
+      break; /* optional */
+  
+   /* you can have any number of case statements */
+   default: /* Optional */
+    printf("Mita vittua Hessu?\n");
+}
