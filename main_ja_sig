@@ -55,12 +55,22 @@ int main(void)
             //taalta signaalit pedolle
             FILE* filu1;
             filu1 = fopen(luku, "r");
+            int merk;
+            while((merk = fgetc(filu1)) != EOF) {
+              //etsi merkki taulukosta
+              //signaloi pedolle
+            }
+            fclose(filu1);
         }
         else // pedoprosessi
         {
-            //taalla jotain
+            //taalla kuunnellaan signaaleja, etsitään merkki ja kirjoitetaan filuun
             FILE* filu2;
-            filu2 = fopen(kirj, "w")
+            filu2 = fopen(kirj, "w");
+            //kuunnellaan signaali
+            //etsitään merkki taulukosta
+            //kirjoitetaan merkki tiedostoon
+            fclose(filu2);
         }
     }
     else // fork failed
