@@ -170,7 +170,7 @@ int main(void)
                   break; /* optional */
                   
                case 'W':
-               case 'v':
+               case 'w':
                   //signaloi morse .-
                   break; /* optional */
             	
@@ -213,7 +213,26 @@ int main(void)
                   //signaloi morse
                   break; /* optional */
                   
-               
+               case '7':
+                  //signaloi morse
+                  break; /* optional */
+                  
+               case '8':
+                  //signaloi morse
+                  break; /* optional */
+                  
+               case '9':
+                  //signaloi morse
+                  break; /* optional */
+                  
+               case '0':
+                  //signaloi morse
+                  break; /* optional */
+                  
+               case ' ':
+                  //signaloi morse
+                  break; /* optional */
+                  
                default: /* Optional */
                 printf("Mita vittua Hessu?\n");
             }
