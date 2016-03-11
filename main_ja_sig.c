@@ -6,15 +6,6 @@
 #include <sys/wait.h>
 #include <stdlib.h>
 
-/*static void sig_usr(int signo){
-  if(signo == SIGINT){
-  char buf[] = "SIGINT signal caught!!\n";
-  int wr = strlen(buf);
-  write(STDOUT_FILENO, buf, wr);
-}
-  return;
-}*/
-
 int main(int argc, char* argv[])
 {
     //signalointi
@@ -47,13 +38,13 @@ int main(int argc, char* argv[])
     pid_t childPID;
     int var_lcl = 0;
 
-    loli = fork();
+    child = fork();
 
-    if(loli >= 0) // onnistui
+    if(child >= 0) // onnistui
     {
-        if(loli == 0) // loliprosessi
+        if(child == 0) // childprosessi
         {
-            //taalta signaalit pedolle
+            //taalta signaalit parentille
             FILE* filu1;
             filu1 = fopen(luku, "r");
             int merk;
@@ -235,9 +226,9 @@ int main(int argc, char* argv[])
                   break; /* optional */
                   
                default: /* Optional */
-                printf("Mita vittua Hessu?\n");
+                printf("Mita sviduu Hessu?\n");
             }
-              //signaloi pedolle
+              //signaloi parentille
             }
             fclose(filu1);
         }
@@ -252,9 +243,9 @@ int main(int argc, char* argv[])
             fclose(filu2);
         }
     }
-    else // vituks meni
+    else // Eipa onnistu
     {
-        printf("\nHaistappa vidu\n");
+        printf("\nEipa onnistu\n");
         return 1;
     }
 
